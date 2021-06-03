@@ -1,0 +1,31 @@
+POST   http://localhost:3003/api/blogs
+Content-Type: application/json
+Authorization: bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6IkJhY2hoIiwiaWQiOiI2MGI3YzVlNjJiMDQxNzBlYTRkY2IzYjMiLCJpYXQiOjE2MjI2NTY5MTh9.7C_g2PKlap9KgKkC79kqT4IsdgA3ny3pFZkRqyUQ3ss
+
+{
+    "title": "Machine learning",
+    "author": "Phu Pham",
+    "url": "http://realaddress.com",
+    "likes": 3
+}
+###
+GET http://localhost:3003/api/blogs
+
+###
+POST   http://localhost:3003/api/users
+Content-Type: application/json
+
+{
+    "username": "Bachh",
+    "name": "Bach Pham",
+    "password": "bach90",
+    "blogs" : []
+}
+###
+POST   http://localhost:3003/api/login
+Content-Type: application/json
+
+{
+    "username": "Bachh",
+    "password": "bach90"
+}
